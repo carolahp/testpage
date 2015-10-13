@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "El baile de la tortuga utilizando ActionLib"
+date:   2015-10-08 17:00:00
+author: Francisco Montoto, Carolina Hernandez
+categories: progress
+---
+
 #El baile de la tortuga utilizando ActionLib
 
 En primer lugar se estudiaron los tutoriales y ejemplos disponibles en el apartado de ActionLib en la página de ROS. Una vez que hubo un entendimiento del método de funcionamiento de la librería se comenzó la programación como se explica a continuación:
