@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "El baile de la tortuga"
+date:   2015-10-01 17:00:00
+author: Francisco Montoto, Carolina Hernandez
+categories: progress
+---
+
 #El baile de la tortuga
 
 1. Los pasos del baile serán:
