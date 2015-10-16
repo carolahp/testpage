@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Week #2"
+title:  "¿Por que no funciona?"
 date:   2015-09-21 17:00:00
 author: Francisco Montoto, Carolina Hernandez
-categories: progress
+categories: turtlebot teleop gazebo topico acertijo
 ---
 
-# Por qué no funciona?
+# ¿Por qué no funciona?
 Problema: El comando teleop no funciona para la primera versión del turtlebot.
 
 Como lo solucionamos?
