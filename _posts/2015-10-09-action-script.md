@@ -3,7 +3,7 @@ layout: post
 title:  "El baile de la tortuga utilizando ActionLib"
 date:   2015-10-08 17:00:00
 author: Francisco Montoto, Carolina Hernandez
-categories: actionscript, turtlebot, dance
+categories: actionlib turtlebot baile
 ---
 
 #El baile de la tortuga utilizando ActionLib
