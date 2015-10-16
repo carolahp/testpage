@@ -8,11 +8,12 @@ categories: progress
 
 #El baile de la tortuga
 
-1. Los pasos del baile serán:
+1. Se definen los pasos del baile. Éstos serán:
 - girar en 360° en sentido antihorario
-- avanzar 
+- avanzar una distancia definida
 - retroceder la misma distancia avanzada
 - recorrer trayectoria semicircular en sentido antihorario
+- repetir
 
 
  2. Se corre gazebo y keyboard teleop. Se hace un rostopic list y se decide publicar en el topic /cmd_vel_mux/input/teleop
