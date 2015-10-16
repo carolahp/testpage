@@ -3,7 +3,7 @@ layout: post
 title:  "El baile de la tortuga"
 date:   2015-10-01 17:00:00
 author: Francisco Montoto, Carolina Hernandez
-categories: progress
+categories: turtlebot baile python script
 ---
 
 #El baile de la tortuga
