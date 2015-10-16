@@ -3,7 +3,7 @@ layout: post
 title:  "¿Por que no funciona?"
 date:   2015-09-21 17:00:00
 author: Francisco Montoto, Carolina Hernandez
-categories: progress
+categories: turtlebot teleop gazebo topico acertijo
 ---
 
 # ¿Por qué no funciona?
