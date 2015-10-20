@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Pasos para contribuir"
+date:   2015-09-21 17:00:00
+author: Francisco Montoto, Carolina Hernandez
+categories: private
+---
+
 Pasos a seguir para contribuir en ROS:
 http://wiki.ros.org/Get%20Involved
 
