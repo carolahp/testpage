@@ -19,7 +19,7 @@ http://wiki.ros.org/Get%20Involved
 ###Pasos Especificos
   * suscribirse al mailing list 
   * [revisar las buenas practicas para escribir codigo publicadas por ROS](http://wiki.ros.org/ROS/Patterns)
-  * [leer la ROS developer's guide[(http://wiki.ros.org/DevelopersGuide)
+  * [leer la ROS developer's guide](http://wiki.ros.org/DevelopersGuide)
   * hacer los tutoriales para [test-driven-development en ROS](https://docs.google.com/presentation/d/1eraurS9rlMXyN0kbQMJdCyWOxRC5JTBV7FskyMaYNpM/present#slide=id.p)
   * instalar ROS jade (en ubuntu 15.04) -> no es necesario bajar los sources para compilar en la maquina, ya que python no se compila
   * hacer un fork del repositorio de ROS en github
