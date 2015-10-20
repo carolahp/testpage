@@ -27,11 +27,11 @@ http://wiki.ros.org/Get%20Involved
   * informar los avances del desarrollo y en especial el final del proyecto a traves de la mailing list
   
   
-###Detalles tecnicos:
-    * Instalar ROS jade
-      * targeted to Ubuntu 15.04 (actualizar ubuntu de ser necesario)
-      * [instrucciones](http://wiki.ros.org/jade/Installation/Ubuntu)
-    * Tutorial para aprender a contribuir a los repositorios de ROS http://wiki.ros.org/RecommendedRepositoryUsage
-    * Tutorial para indexar repositorio y generar documentacion http://wiki.ros.org/rosdistro/Tutorials/Indexing%20Your%20ROS%20Repository%20for%20Documentation%20Generation
-    * location de la clase rostopic en repositorio de ROS en Github https://github.com/ros/ros_comm/blob/indigo-devel/tools/rostopic/src/rostopic/__init__.py
-    * path de la clase rostopic en la instalacion de ROS en PC robotica /opt/ros/indigo/lib/python2.7/dist-packages/rostopic
+###Detalles tecnicos
+  * Instalar ROS jade
+    * targeted to Ubuntu 15.04 (actualizar ubuntu de ser necesario)
+    * [instrucciones](http://wiki.ros.org/jade/Installation/Ubuntu)
+  * Tutorial para aprender a contribuir a los repositorios de ROS http://wiki.ros.org/RecommendedRepositoryUsage
+  * Tutorial para indexar repositorio y generar documentacion http://wiki.ros.org/rosdistro/Tutorials/Indexing%20Your%20ROS%20Repository%20for%20Documentation%20Generation
+  * location de la clase rostopic en repositorio de ROS en Github https://github.com/ros/ros_comm/blob/indigo-devel/tools/rostopic/src/rostopic/__init__.py
+  * path de la clase rostopic en la instalacion de ROS en PC robotica /opt/ros/indigo/lib/python2.7/dist-packages/rostopic
