@@ -3,7 +3,7 @@ layout: post
 title: "Rostopic GUI Extension, reporte de la propuesta."
 date: 2015-09-22 17:00:00
 author: Carolina Hernandez, Francisco Montoto
-categores: private
+categories: private
 ---
 
 ###Rostopic
