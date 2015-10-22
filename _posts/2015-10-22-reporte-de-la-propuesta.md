@@ -7,6 +7,6 @@ categories: private
 ---
 
 ###Rostopic
-Rostopic es un conjunto de herramientas de linea de comando disponibles en ROS. Permite obtener informacion, monitorear y enviar mensajes a los topicos disponibles.
+Rostopic es un conjunto de herramientas de línea de comando disponibles en ROS. Permite obtener información, monitorear y enviar mensajes a los tópicos disponibles.
 
 
