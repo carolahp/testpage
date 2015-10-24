@@ -61,7 +61,7 @@ El detalle de la arquitectura se especifica a continuación en el diagrama de la
 Las flechas representan flujo de información sobre los tópicos, mientras que las líneas punteadas indican interacción entre las clases.
 
 <a href="{{site.baseurl}}/assets/reporte/design_large.png" data-lightbox="design-large" data-title="Design">
-	<img src="{{site.baseurl}}/assets/reporte/design.png" title="Design">
+	<img src="{{site.baseurl}}/assets/reporte/design.png" title="Design" style="width:auto !important;height:auto !important;">
 </a>
 
 Dentro del módulo Rostopic GUI Extension, se encuentran tres módulos principales:
@@ -75,11 +75,11 @@ La ventana de principal constará de una barra superior de opciones, con checkbo
 
 
 <a href="{{site.baseurl}}/assets/reporte/main_window_large.png" data-lightbox="main-window-large" data-title="Main Window">
-	<img src="{{site.baseurl}}/assets/reporte/main_window.png" title="Main Window" width="298" height="180">
+	<img src="{{site.baseurl}}/assets/reporte/main_window.png" title="Main Window" style="width:auto !important;height:auto !important;">
 </a>
 
 <a href="{{site.baseurl}}/assets/reporte/interaction_windows.png" data-lightbox="interaction-large" data-title="Interaction Windows">
-	<img src="{{site.baseurl}}/assets/reporte/interaction_windows.png" title="Interaction Windows" >
+	<img src="{{site.baseurl}}/assets/reporte/interaction_windows.png" title="Interaction Windows" style="width:auto !important;height:auto !important;" >
 </a>
 
 ##Conclusión
