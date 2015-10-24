@@ -45,7 +45,7 @@ En específico, se proveerán las siguientes funcionalidades:
 El diseño de general de la solución es una interfaz gráfica escrita en python que haga todo el uso posible de rostopic para la comunicación con ROS:
 
 ![Arquitectura]({{site.baseurl}}/assets/reporte/architecture.png)
-Figura 1: Arquitectura 
+Figura 1: Arquitectura
 
 Al hacer uso de rostopic, que ya es una herramienta soportada por la comunidad, disminuimos el código nuevo a soportar. Esperamos mantener al mínimo la comunicación directa con ROS sin pasar por funciones de rostopic. Esta forma de comunicación es representada en la figura 1 mediante una flecha roja.
 
@@ -57,6 +57,10 @@ La ventana de principal constará de una barra superior con checkbox y/o botones
 ![MainWindow]({{site.baseurl}}/assets/reporte/main_window.png)
 ![InteractionWindows]({{site.baseurl}}/assets/reporte/interaction_windows.png)
 
+<a href="{{site.baseurl}}/assets/reporte/interaction_windows.png" data-lightbox="interaction-large" data-title="Interaction Windows">
+	<img src="{{site.baseurl}}/assets/reporte/interaction_windows/png" title="Interaction Windows">
+</a>
+![InteractionWindows]({{site.baseurl}}/assets/reporte/interaction_windows.png)
 
 
 ##Conclusión
