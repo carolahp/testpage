@@ -30,9 +30,10 @@ Al hacer uso de rostopic, que ya es una herramienta soportada por la comunidad d
 Uno de los objetivos de la herramienta es permitir interactuar con más de un tópico a la vez, por lo que permitirá la interacción con todos los tópicos que el usuario desee. Es por esto que se ha decidido tener una ventana con una lista de todos los tópicos disponibles y otra ventana para cada tópico con el que se esté interactuando.
 
 ###Diseño detallado
+La ventana de principal constará de una barra superior con checkbox y/o botones que permitirán ciertas configuraciones y filtros. Luego la ventana se divide en dos, en la izquierda se desplegará la lista de tópicos disponibles y a la derecha información sobre el tópico que se seleccione, además desde aquí se lanzarán las ventanas para interactuar con el tópico. Una ventana para escuchar el topic (Echo) y otra para escribir en él (Publish). Las imágenes a continuación muestran un mockup de la ventana principal y las dos ventanas de interación.
 
-
-![Arquitectura]({{site.baseurl}}/assets/reporte/architecture.png)
+![MainWindow]({{site.baseurl}}/assets/reporte/main_window.png)
+![InteractionWindows]({{site.baseurl}}/assets/reporte/interaction_windows.png)
 
 
 
