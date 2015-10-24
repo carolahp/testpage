@@ -54,22 +54,22 @@ Uno de los objetivos de la herramienta es permitir interactuar con más de un t�
 
 El detalle de la arquitectura se especifica a continuación en el diagrama de la Figura 2. En éste se observan 3 grandes módulos:
 - Roscore (verde): Contiene todo lo relacionado con roscore (núcleo de ROS), en particular la clase Rostopic.
-- Rostopic GUI Extension: Contiene todas las clases que deberán ser implementadas para concretar la solución descrita en el presente reporte.
-- External módules: Contiene las librerías externas que se usarán como apoyo para la implementación
+- Rostopic GUI Extension (azul): Contiene todas las clases que deberán ser implementadas para concretar la solución descrita en el presente reporte.
+- External módules (rojo): Contiene las librerías externas que se usarán como apoyo para la implementación
 
-Las flechas representar flujo de información sobre los tópicos, mientras que las líneas punteadas indican interacción entre las clases. 
+Las flechas representan flujo de información sobre los tópicos, mientras que las líneas punteadas indican interacción entre las clases. 
 
 Dentro del módulo Rostopic GUI Extension, se encuentran tres módulos principales: 
 - graphic interface: que implementa el front end de la aplicación.
 - topics manager: implementa la lógica de la aplicación. Provee funcionalidad a graphic interface. Interactúa además con plotter para implementar gráficos.
 - plotter: contiene la lógica para crear gráficos. Interactúa con topics manager.
 
-Con respecto al diseño de las interfaces gráficas, se contará con lo siguiente:
-La ventana de principal constará de una barra superior con checkbox y/o botones que permitirán ciertas configuraciones y filtros. Luego la ventana se divide en dos, en la izquierda se desplegará la lista de tópicos disponibles y a la derecha información sobre el tópico que se seleccione, además desde aquí se lanzarán las ventanas para interactuar con el tópico. Una ventana para escuchar el topic (Echo) y otra para escribir en él (Publish). Las imágenes a continuación muestran un mockup de la ventana principal y las dos ventanas de interación.
+Con respecto al diseño de las interfaces gráficas, se especifica lo siguiente:
+
+La ventana de principal constará de una barra superior de opciones, con checkboxes y/o botones que permitirán configurar y filtrar la lista de tópicos según publicadores y suscriptores asociados. El resto de la ventana se dividirá en dos, en la sección izquierda se desplegará la lista de tópicos disponibles y en la derecha, información sobre el tópico que se seleccione. Además desde aquí se lanzarán las ventanas para interactuar con el tópico: Una de ellas servirá para escuchar el topic (Echo) y otra para escribir en él (Publish). Las imágenes a continuación muestran un mockup de la ventana principal y las dos ventanas de interación.
 
 ![MainWindow]({{site.baseurl}}/assets/reporte/main_window.png)
 ![InteractionWindows]({{site.baseurl}}/assets/reporte/interaction_windows.png)
-
 
 
 ##Conclusión
