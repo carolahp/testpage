@@ -47,7 +47,7 @@ El diseño de la arquitectura de software de la solución propuesta considera ma
 <a href="{{site.baseurl}}/assets/reporte/architecture.png" data-lightbox="architecture-large" data-title="Architecture">
 	<img src="{{site.baseurl}}/assets/reporte/architecture.png" title="Architecture">
 </a>
-Figura 1: Arquitectura
+->Figura 1: Arquitectura<-
 
 El diseño de general de la solución contempla la creación de una interfaz gráfica escrita en python, que sirva de medio exclusivo de comunicación con el usuario, y que posibilite la comunicación con ROS principalmente reutilizando funciones de rostopic.
 
