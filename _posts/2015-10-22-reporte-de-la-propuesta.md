@@ -23,7 +23,21 @@ Dos problemas específicos se derivan de lo anterior:
 Por todo lo ya mencionado, interactuar y monitorear los tópicos disponibles en ROS es poco intuitivo, dificultoso y lento.
 
 ##Solución
-La solución que proponemos es una interfaz gráfica que permita al usuario ver exactamente lo que está pasando con los tópicos activos. Además de monitorear cada uno de los tópicos debe ser capaz de enviar información a través de éstos.
+Para solucionar la problemática presentada hace falta una manera de acercar al usuario las funcionalidades que brinda Rostopic, haciéndolas más usables, intuitivas y rápidas, y proveyendo mecanismos que presenten la información extraída por Rostopic de manera más legible e interactiva. 
+
+La solución propuesta consiste en una interfaz gráfica que permita al usuario ver exactamente lo que está pasando con los tópicos activos y que, además de monitorearlos, sea capaz de asistir al usuario en el envío de mensajes a través de éstos.
+
+En específico, se proveerán las siguientes funcionalidades:
+
+- Un listado de los tópicos activos, el cual podrá ser filtrado según tenga publicadores y/o suscriptores asociados. Se espera que esta lista se actualice en tiempo real y que especifique la tasa a la que se está publicando en cada tópico desplegado. 
+
+- Una vista detallada de la información de cada tópico, en la que la información será presentada modularmente, y se desplegará según instrucciones del usuario. En particular se mostrarán detalles sobre: publicadores, suscriptores y tipo de mensajes.  
+
+- Una interfaz para publicar mensajes sobre un tópico específico. Esta interfaz deberá adaptarse al tipo de mensaje asociado al tópico, presentando campos independientes para cada componente del mensaje, y deberá validar la información ingresada en cada campo por el usuario.
+
+- Una interfaz para visualizar (echo) los mensajes transmitidos a través de un tópico particular. Esta interfaz incluirá un mecanismo para navegar sobre los mensajes ordenados según momento de publicación. Se proveerá de este modo un método para visualizar la evolución de los mensajes publicados sobre un tópico.
+
+- Gráficos sobre la evolución de la tasa de transmisión de mensajes para cada tópico. Suministrando así una herramienta visual para extraer información global sobre el uso de los tópicos.
 
 ##Diseño de la solución
 
