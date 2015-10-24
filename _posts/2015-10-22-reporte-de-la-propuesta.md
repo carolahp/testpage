@@ -45,8 +45,9 @@ En específico, se proveerán las siguientes funcionalidades:
 El diseño de general de la solución es una interfaz gráfica escrita en python que haga todo el uso posible de rostopic para la comunicación con ROS:
 
 ![Arquitectura]({{site.baseurl}}/assets/reporte/architecture.png)
+Figura 1: Arquitectura 
 
-Al hacer uso de rostopic, que ya es una herramienta soportada por la comunidad disminuimos el código nuevo a soportar. Esperamos mantener al mínimo la comunicación con ROS que no hace uso de rostopic, representada en la figura con la flecha roja.
+Al hacer uso de rostopic, que ya es una herramienta soportada por la comunidad, disminuimos el código nuevo a soportar. Esperamos mantener al mínimo la comunicación directa con ROS sin pasar por funciones de rostopic. Esta forma de comunicación es representada en la figura 1 mediante una flecha roja.
 
 Uno de los objetivos de la herramienta es permitir interactuar con más de un tópico a la vez, por lo que permitirá la interacción con todos los tópicos que el usuario desee. Es por esto que se ha decidido tener una ventana con una lista de todos los tópicos disponibles y otra ventana para cada tópico con el que se esté interactuando.
 
