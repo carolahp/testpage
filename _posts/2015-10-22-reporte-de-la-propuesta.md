@@ -75,7 +75,7 @@ La ventana de principal constará de una barra superior de opciones, con checkbo
 ![InteractionWindows]({{site.baseurl}}/assets/reporte/interaction_windows.png)
 
 <a href="{{site.baseurl}}/assets/reporte/interaction_windows.png" data-lightbox="interaction-large" data-title="Interaction Windows">
-	<img src="{{site.baseurl}}/assets/reporte/interaction_windows/png" title="Interaction Windows">
+	<img src="{{site.baseurl}}/assets/reporte/interaction_windows.png" title="Interaction Windows">
 </a>
 ![InteractionWindows]({{site.baseurl}}/assets/reporte/interaction_windows.png)
 
