@@ -16,5 +16,8 @@ El interactuar y monitorear los tópicos disponibles en ROS es poco intuitivo y 
 La solución que proponemos es una interfaz gráfica que permita al usuario ver exactamente lo que está pasando con los tópicos activos. Además de monitorear cada uno de los tópicos debe ser capaz de enviar información a través de éstos.
 
 ##Diseño de la solución
+El diseño de general de la solución es una interfaz gráfica escrita en python que haga todo el uso posible de rostopic para la comunicación con ROS:
+
+![Arquitectura]({{site.baseurl}}/assets/reporte/architecture.png)
 
 ##Conclusión
