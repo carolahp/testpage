@@ -45,6 +45,9 @@ En específico, se proveerán las siguientes funcionalidades:
 El diseño de la arquitectura de software de la solución propuesta considera maximizar la reutilización de código desde la clase rostopic. Se tiene esta consideración en parte porque al hacer uso de rostopic, que ya es una herramienta soportada por la comunidad, se disminuye el código nuevo a soportar. Esperamos mantener al mínimo la comunicación directa con ROS sin pasar por funciones de rostopic. Esta forma de comunicación es representada en la Figura 1 mediante una flecha roja.
 
 ![Arquitectura]({{site.baseurl}}/assets/reporte/architecture.png)
+<a href="{{site.baseurl}}/assets/reporte/architecture.png" data-lightbox="architecture-large" data-title="Architecture">
+	<img src="{{site.baseurl}}/assets/reporte/architecture.png" title="Architecture">
+</a>
 Figura 1: Arquitectura
 
 El diseño de general de la solución contempla la creación de una interfaz gráfica escrita en python, que sirva de medio exclusivo de comunicación con el usuario, y que posibilite la comunicación con ROS principalmente reutilizando funciones de rostopic.
