@@ -73,10 +73,9 @@ Con respecto al diseño de las interfaces gráficas, se especifica lo siguiente:
 
 La ventana de principal constará de una barra superior de opciones, con checkboxes y/o botones que permitirán configurar y filtrar la lista de tópicos según publicadores y suscriptores asociados. El resto de la ventana se dividirá en dos, en la sección izquierda se desplegará la lista de tópicos disponibles y en la derecha, información sobre el tópico que se seleccione. Además desde aquí se lanzarán las ventanas para interactuar con el tópico: Una de ellas servirá para escuchar el topic (Echo) y otra para escribir en él (Publish). Las imágenes a continuación muestran un mockup de la ventana principal y las dos ventanas de interación.
 
-![MainWindow]({{site.baseurl}}/assets/reporte/main_window.png)
 
-<a href="{{site.baseurl}}/assets/reporte/main_window.png" data-lightbox="main-window-large" data-title="Main Window">
-	<img src="{{site.baseurl}}/assets/reporte/main_windows_large.png" title="Main Window">
+<a href="{{site.baseurl}}/assets/reporte/main_window_large.png" data-lightbox="main-window-large" data-title="Main Window">
+	<img src="{{site.baseurl}}/assets/reporte/main_windowpng" title="Main Window">
 </a>
 
 <a href="{{site.baseurl}}/assets/reporte/interaction_windows.png" data-lightbox="interaction-large" data-title="Interaction Windows">
