@@ -59,6 +59,8 @@ El detalle de la arquitectura se especifica a continuación en el diagrama de la
 
 Las flechas representan flujo de información sobre los tópicos, mientras que las líneas punteadas indican interacción entre las clases. 
 
+![Arquitectura]({{site.baseurl}}/assets/reporte/design.png "Figura 2: Arquitectura")
+
 Dentro del módulo Rostopic GUI Extension, se encuentran tres módulos principales: 
 - graphic interface: que implementa el front end de la aplicación.
 - topics manager: implementa la lógica de la aplicación. Provee funcionalidad a graphic interface. Interactúa además con plotter para implementar gráficos.
