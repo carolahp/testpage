@@ -27,6 +27,13 @@ El diseño de general de la solución es una interfaz gráfica escrita en python
 
 Al hacer uso de rostopic, que ya es una herramienta soportada por la comunidad disminuimos el código nuevo a soportar. Esperamos mantener al mínimo la comunicación con ROS que no hace uso de rostopic, representada en la figura con la flecha roja.
 
+Uno de los objetivos de la herramienta es permitir interactuar con más de un tópico a la vez, por lo que permitirá la interacción con todos los tópicos que el usuario desee. Es por esto que se ha decidido tener una ventana con una lista de todos los tópicos disponibles y otra ventana para cada tópico con el que se esté interactuando.
+
+###Diseño detallado
+
+
+![Arquitectura]({{site.baseurl}}/assets/reporte/architecture.png)
+
 
 
 ##Conclusión
