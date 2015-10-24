@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pasos para contribuir"
+title:  "Plan general de Trabajo"
 date:   2015-10-22 12:00:00
 author: Carolina Hernandez, Francisco Montoto
 categories: private
