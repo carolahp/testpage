@@ -12,26 +12,26 @@ En la actualidad, el framework ROS es una de las herramientas más usadas para l
 Una de las herramientas más relevantes dentro de ROS es Rostopic. Ésta corresponde a un conjunto de funcionalidades ejecutadas por línea de comando, que permiten obtener información, monitorear y enviar mensajes a los tópicos disponibles.
 
 ##Problema
-Ya que rostopic es una herramienta de línea de comandos, tiene dificultades de usabilidad inherentes, sobre todo para usuarios no acostumbrados a este medio de interacción. El tener que hacer múltiples llamadas para conocer los tópicos disponibles y poder interactuar con ellos, tener que leer el manual para conocer las funcionalidades y cómo ejecutarlas, son algunos de estos problemas. 
+Ya que rostopic es una herramienta de línea de comandos, tiene dificultades de usabilidad inherentes, sobre todo para usuarios no acostumbrados a este medio de interacción. El tener que hacer múltiples llamadas para conocer los tópicos disponibles y poder interactuar con ellos, tener que leer el manual para conocer las funcionalidades y cómo ejecutarlas, son algunos de estos problemas.
 
 Dos problemas específicos se derivan de lo anterior:
 
-- El comando sub (destinado para publicar mensajes en un tópico definido) es muy verboso debido a que los tipos de mensajes relacionados a un tópico, pueden ser complejos. Esto produce un gran riesgo de cometer un error al tipear el comando en el terminal. Además, en caso de error, la retroalimentación de rostopic no es clara, llevando al usuario a perder tiempo detectando el origen de comportamientos inesperados. 
+- El comando sub (destinado para publicar mensajes en un tópico definido) es muy verboso debido a que los tipos de mensajes relacionados a un tópico, pueden ser complejos. Esto produce un gran riesgo de cometer un error al tipear el comando en el terminal. Además, en caso de error, la retroalimentación de rostopic no es clara, llevando al usuario a perder tiempo detectando el origen de comportamientos inesperados.
 
 - No es posible tener una visión global del uso de los tópicos y del flujo de mensajes a través de éstos. Ya que para obtener información sobre distintos tópicos, es necesario hacer varias llamadas a funciones de rostopic, a veces inclusive en distintos terminales, lo cual entorpece el proceso de entendimiento del panorama global.
 
 Por todo lo ya mencionado, interactuar y monitorear los tópicos disponibles en ROS es poco intuitivo, dificultoso y lento.
 
 ##Solución
-Para solucionar la problemática presentada hace falta una manera de acercar al usuario las funcionalidades que brinda Rostopic, haciéndolas más usables, intuitivas y rápidas, y proveyendo mecanismos que presenten la información extraída por Rostopic de manera más legible e interactiva. 
+Para solucionar la problemática presentada hace falta una manera de acercar al usuario las funcionalidades que brinda Rostopic, haciéndolas más usables, intuitivas y rápidas, y proveyendo mecanismos que presenten la información extraída por Rostopic de manera más legible e interactiva.
 
 La solución propuesta consiste en una interfaz gráfica que permita al usuario ver exactamente lo que está pasando con los tópicos activos y que, además de monitorearlos, sea capaz de asistir al usuario en el envío de mensajes a través de éstos.
 
 En específico, se proveerán las siguientes funcionalidades:
 
-- Un listado de los tópicos activos, el cual podrá ser filtrado según tenga publicadores y/o suscriptores asociados. Se espera que esta lista se actualice en tiempo real y que especifique la tasa a la que se está publicando en cada tópico desplegado. 
+- Un listado de los tópicos activos, el cual podrá ser filtrado según tenga publicadores y/o suscriptores asociados. Se espera que esta lista se actualice en tiempo real y que especifique la tasa a la que se está publicando en cada tópico desplegado.
 
-- Una vista detallada de la información de cada tópico, en la que la información será presentada modularmente, y se desplegará según instrucciones del usuario. En particular se mostrarán detalles sobre: publicadores, suscriptores y tipo de mensajes.  
+- Una vista detallada de la información de cada tópico, en la que la información será presentada modularmente, y se desplegará según instrucciones del usuario. En particular se mostrarán detalles sobre: publicadores, suscriptores y tipo de mensajes.
 
 - Una interfaz para publicar mensajes sobre un tópico específico. Esta interfaz deberá adaptarse al tipo de mensaje asociado al tópico, presentando campos independientes para cada componente del mensaje, y deberá validar la información ingresada en cada campo por el usuario.
 
@@ -59,3 +59,15 @@ La ventana de principal constará de una barra superior con checkbox y/o botones
 
 
 ##Conclusión
+
+La propuesta descrita solucionaría el problema planteado, haciendo más fácil y sencillo el monitoreo y la interacción con los tópicos. Por lo que de ser implementada se cumpliría el objetivo.
+
+El plazo es acotado por el semestre, al cual le quedan 7 semanas, y la solución es ambiciosa, sin embargo confiamos en que para la fecha de entrega contemos con un software funcional y que agregue valor al ecosistema de desarrollo en ROS. Para esto se establece como mínimo deseable para el fin del semestre lo siguiente:
+
+-La vista principal funcionando con al menos la lista de tópicos.
+
+-La vista de echo permitiendo ver el último mensaje enviado por el topic.
+
+-La vista de publish funcionando y permitiendo enviar mensajes.
+
+Se considera que la funcionalidad descrita como mínima es un avance con respecto a lo que existe hoy y que cumple con el objetivo de mejorar el ecosistema de desarrollo en ROS.
