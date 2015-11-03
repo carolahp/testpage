@@ -15,7 +15,8 @@ categories: plan
 3. Investigar como renderizar archivos SVG utilizando python de forma continua.
 
 ###Tercera semana.
-1. Interfaz que permita visualizar el grafo, con al menos un elemento que se actualice dinamicamente.
+1. Interfaz que permita visualizar el grafo
+2. La interfaz debe contar con al menos un elemento que se actualice dinamicamente, preferentemente el rate del tópico.
 
 ##Segunda Iteración
 ###Primera semana.
