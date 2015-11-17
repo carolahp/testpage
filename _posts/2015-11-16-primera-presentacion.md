@@ -26,9 +26,11 @@ Pese a que el objetivo final del proyecto fue determinado tan sólo una semana a
 El desarrollo del proyecto fue dividido en dos partes que se desarrollaron por separado: Frontend y Backend:
 
 ##Desarrollo del Backend
-AQUI ESPECIFICAR COMO SE IMPLEMENTO EL BACKEND
+Para el backend se optó por desarrollar el servidor en Flask, Flask es un micro framework web de python que permite crear aplicaciones web. Su facilidad de uso, simplicidad y popularidad fueron los factores determinantes en esta decisión, sin embargo al no poseer integración con bases de datos por ejemplo, el portar el servidor a otro framework no es una tarea muy compleja.
 
-Es importante mencionar que hubo funciones propias del módulo rostopic de ROS, que no pudieron ser utilizadas simplemente importando el módulo como librería. Para dichos casos, provisionalmente se copiaron y pegaron trozos de código de rostopic al proyecto local. Como una etapa adicional al proyecto, que surge a partir de esta problemática, se agrega el objetivo de remodularizar rostopic, tal que las funciones necesarias para obtener información acerca denodos, tópicos y mensajes, sean accesibles desde proyectos externos. 
+La generación del archivo SVG se hace de manera lazy, es decir es generada solo si alguien lo requiere, lo que evita trabajo extra al servidor, y además es mantenida en memoria durante un tiempo de manera tal que de haber más de un request por el svg en un lapso corto de tiempo este sea reutilizado. En tanto para la interacción más específica con los tópicos se implementó una interfaz REST.
+
+El backend fue desarrollado pensando en mantener al mínimo el código relacioando a ROS, pues muchas de las funciones necesarias ya son implementadas, sin embargo es importante mencionar que hubo funciones propias del módulo rostopic de ROS, que no pudieron ser utilizadas simplemente importando el módulo como librería. Para dichos casos, provisionalmente se copiaron y pegaron trozos de código de rostopic al proyecto local. Como una etapa adicional al proyecto, que surge a partir de esta problemática, se agrega el objetivo de remodularizar rostopic, tal que las funciones necesarias para obtener información acerca denodos, tópicos y mensajes, sean accesibles desde proyectos externos. 
 
 ##Desarrollo del Frontend
 El objetivo principal del frontend para esta iteración era, en primer lugar, ser capaz de desplegar la imagen svg eficientemente, y en segundo lugar, implementar comportamientos interactivos a la misma, a través de los cuales el usuario podría seleccionar las flechas asociadas a los tópicos dentro del diagrama con el mouse (o tocándolas) y revisar información detallada acerca de las mismas. 
