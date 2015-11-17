@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vista dinámica de Nodos, Topics y Flujo de Mensajes, reporte de la propuesta."
+title: "Reporte de la propuesta(2)"
 date: 2015-11-08 15:00:00
 author: Carolina Hernandez, Francisco Montoto
 categories: rqt_graph topic node msg progress proyect
