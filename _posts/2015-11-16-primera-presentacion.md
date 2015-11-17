@@ -21,7 +21,23 @@ El diagrama generado corresponde a una imagen en formato svg, que es creada y lu
 #Descripción del proceso de desarrollo
 Pese a que el objetivo final del proyecto fue determinado tan sólo una semana antes de la entrega del primer prototipo, no todo el trabajo presentado fue realizado durante esta semana, ya que fueron reutilizadas las funciones creadas para el proyecto rostopic-gui, en específico aquellas que extraían información sobre nodos y tópicos de roscore, y que generaban un archivos svg a partir de ésta.
 
-Aqui especificar cómo se implementaron estas funciones. 
+El desarrollo del proyecto fue dividido en dos partes que se desarrollaron por separado: Frontend y Backend:
+
+##Desarrollo del Backend
+Aqui especificar cómo se implemento el backend
 
 Es importante mencionar que hubo funciones propias del módulo rostopic de ROS, que no pudieron ser utilizadas simplemente importando el módulo como librería. Para dichos casos, provisionalmente se copiaron y pegaron trozos de código de rostopic al proyecto local. Como una etapa adicional al proyecto, que surge a partir de esta problemática, se agrega el objetivo de remodularizar rostopic, tal que las funciones necesarias para obtener información acerca denodos, tópicos y mensajes, sean accesibles desde proyectos externos. 
+
+##Desarrollo del Frontend
+El objetivo principal del frontend para esta iteración era, en primer lugar, ser capaz de desplegar la imagen svg eficientemente, y en segundo lugar, implementar comportamientos interactivos a la misma, a través de los cuales el usuario podría seleccionar las flechas asociadas a los tópicos dentro del diagrama con el mouse (o tocándolas) y revisar información detallada acerca de las mismas. 
+
+El primer paso era generar un nuevo diagrama cada vez que el cliente entrara a la página principal. Esto se logró utilizando las funcionalidades provistas por el backend. 
+La renderización eficiente del svg fue lograda sin necesidad de mucho esfuerzo, dado que los browsers de internet (tanto para plataformas móviles como tradicionales) renderizan este tipo de imagenes nativamente.
+La implementación de interacciones en el svg demandó mayor labor. Luego de investigar distintas maneras de lograrlo, fue decidida la alternativa de hacerlo con ayuda de javascript. Como es sabido, el formato svg consiste en un xml donde cada elemento del dibujo que se va a renderizar, queda determinado por uno o más tipos de tags que estipulan parámetros para una forma definida. Para implementar comportamientos interactivos en el svg, su xml fue modificado con la ayuda de una función javascript asociada al evento onload del html desplegado. El xml fue recorrido recursivamente, y los tags que formaban parte de alguna flecha en el diagrama, fueron seleccionados. A éstos se les agregaron EventListeners, que reaccionarían ante los eventos: mouseover, mouseout y click.
+
+Los eventos mouseover y mouseout llamarían a funciones que cambiarían parámetros definidos dentro del tag (en este caso el color).
+El evento click fue asociado a un función que rescata un atributo del tag (el nombre del tópico) para utilizarlo como parámetro para consultar asíncronamente al servidor, los detalles asociados a este tópico.
+
+#Principales dificultades afrontadas durante el desarrollo
+
 
