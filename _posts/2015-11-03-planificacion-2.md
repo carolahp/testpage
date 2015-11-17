@@ -20,10 +20,16 @@ categories: plan
 
 ##Segunda Iteración
 ###Primera semana.
-1. TODO
+1. Investigar bibliotecas para implementar UI con soporte para dispositivos móviles.
+2. Diseñar e Implementar la UI de la página principal (svg con tópicos).
+3. Agregar funcionalidad en el backend para obtener la estructura del mensaje.
+4. Al clickear una interacción debe cambiar de color el nodo y el tópico involucrados.
 
 ###Segunda semana.
-1. TODO
+1. Diseñar e implementar UI para hacer echo y publish de mensajes en un tópico.
+2. Implementar funciones para realizar echo y publish.
 
 ###Tercera semana.
-1. TODO
+1. BugFixing.
+2. Escribir reporte final.
+3. Tener versión estable en el repositorio.
