@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reporte de la propuesta(2)"
+title: "Reporte de la propuesta definitivo"
 date: 2015-11-08 15:00:00
 author: Carolina Hernandez, Francisco Montoto
 categories: rqt_graph topic node msg progress proyect
