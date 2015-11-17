@@ -7,7 +7,7 @@ categories: plan
 ---
 ##Primera Iteración
 ###Primera semana.
-
+-
 
 ###Segunda semana.
 1. Generar archivo DOT con los actuales tópicos y nodos.
@@ -20,10 +20,10 @@ categories: plan
 
 ##Segunda Iteración
 ###Primera semana.
-1. 
+1. TODO
 
 ###Segunda semana.
-1. 
+1. TODO
 
 ###Tercera semana.
-1. 
+1. TODO
