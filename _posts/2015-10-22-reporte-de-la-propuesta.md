@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rostopic GUI Extension, reporte de la propuesta."
+title: "Reporte de la propuesta original"
 date: 2015-10-22 15:00:00
 author: Carolina Hernandez, Francisco Montoto
 categories: rostopic GUI progress project
