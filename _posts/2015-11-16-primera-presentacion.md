@@ -18,6 +18,8 @@ La única página funcional que se despliega hasta ahora, permite visualizar un 
 
 El diagrama generado corresponde a una imagen en formato svg, que es creada y luego modificada en el servidor a fin de otorgarle características interactivas dinámicas. Estas características se limitan hasta ahora a cambiar el color (de negro a rojo) de las flechas del diagrama mientras el mouse esté posicionado sobre alguna o bien cuando se efectúe un toque desde una pantalla táctil; y a desplegar información sobre el tópico seleccionado en la región inferior de la pantalla, cada vez que el usuario toque o clickee una de las flechas del diagrama. 
 
+AQUI PONER UN SCREENSHOT DEL PROTOTIPO QUE PRESENTAMOS AYER
+
 #Descripción del proceso de desarrollo
 Pese a que el objetivo final del proyecto fue determinado tan sólo una semana antes de la entrega del primer prototipo, no todo el trabajo presentado fue realizado durante esta semana, ya que fueron reutilizadas las funciones creadas para el proyecto rostopic-gui, en específico aquellas que extraían información sobre nodos y tópicos de roscore, y que generaban un archivos svg a partir de ésta.
 
