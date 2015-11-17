@@ -24,7 +24,7 @@ Pese a que el objetivo final del proyecto fue determinado tan sólo una semana a
 El desarrollo del proyecto fue dividido en dos partes que se desarrollaron por separado: Frontend y Backend:
 
 ##Desarrollo del Backend
-Aqui especificar cómo se implemento el backend
+AQUI ESPECIFICAR COMO SE IMPLEMENTO EL BACKEND
 
 Es importante mencionar que hubo funciones propias del módulo rostopic de ROS, que no pudieron ser utilizadas simplemente importando el módulo como librería. Para dichos casos, provisionalmente se copiaron y pegaron trozos de código de rostopic al proyecto local. Como una etapa adicional al proyecto, que surge a partir de esta problemática, se agrega el objetivo de remodularizar rostopic, tal que las funciones necesarias para obtener información acerca denodos, tópicos y mensajes, sean accesibles desde proyectos externos. 
 
@@ -39,5 +39,9 @@ Los eventos mouseover y mouseout llamarían a funciones que cambiarían parámet
 El evento click fue asociado a un función que rescata un atributo del tag (el nombre del tópico) para utilizarlo como parámetro para consultar asíncronamente al servidor, los detalles asociados a este tópico.
 
 #Principales dificultades afrontadas durante el desarrollo
+La principal y más grave dificultad encontrada fue no poder utilizar funciones de rostopic simplemente importándolo como librería. Y en cambio, tener que copiar y pegar trozos de código provenientes de este módulo al proyecto local. 
+Se propone una remodularización de rostopic para poder usar sus funciones desde el exterior. 
+
+#Objetivos de la siguiente iteración
 
 
