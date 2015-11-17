@@ -18,7 +18,7 @@ La única página funcional que se despliega hasta ahora, permite visualizar un 
 
 El diagrama generado corresponde a una imagen en formato svg, que es creada y luego modificada en el servidor a fin de otorgarle características interactivas dinámicas. Estas características se limitan hasta ahora a cambiar el color (de negro a rojo) de las flechas del diagrama mientras el mouse esté posicionado sobre alguna o bien cuando se efectúe un toque desde una pantalla táctil; y a desplegar información sobre el tópico seleccionado en la región inferior de la pantalla, cada vez que el usuario toque o clickee una de las flechas del diagrama. 
 
-;img src="{{site.baseurl}}/assets/first_iteration_demo.png" title="Demo" style="width:auto !important;height:auto !important;" >
+<img src="{{site.baseurl}}/assets/first_iteration_demo.png" title="Demo" style="width:auto !important;height:auto !important;" >
 
 AQUI PONER UN SCREENSHOT DEL PROTOTIPO QUE PRESENTAMOS AYER
 
