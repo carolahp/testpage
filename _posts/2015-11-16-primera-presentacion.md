@@ -20,8 +20,6 @@ El diagrama generado corresponde a una imagen en formato svg, que es creada y lu
 
 <img src="{{site.baseurl}}/assets/first_iteration_demo.png" title="Demo" style="width:auto !important;height:auto !important;" >
 
-AQUI PONER UN SCREENSHOT DEL PROTOTIPO QUE PRESENTAMOS AYER
-
 #Descripción del proceso de desarrollo
 Pese a que el objetivo final del proyecto fue determinado tan sólo una semana antes de la entrega del primer prototipo, no todo el trabajo presentado fue realizado durante esta semana, ya que fueron reutilizadas las funciones creadas para el proyecto rostopic-gui, en específico aquellas que extraían información sobre nodos y tópicos de roscore, y que generaban un archivos svg a partir de ésta.
 
