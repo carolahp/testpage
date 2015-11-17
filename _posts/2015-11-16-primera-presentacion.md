@@ -43,5 +43,14 @@ La principal y más grave dificultad encontrada fue no poder utilizar funciones 
 Se propone una remodularización de rostopic para poder usar sus funciones desde el exterior. 
 
 #Objetivos de la siguiente iteración
+Para la siguiente iteración se espera contar con un modelo absolutamente funcional de la aplicación, capaz de desplegar un svg que incluya interacciones en cada uno de sus componentes (nodos y tópicos) para conocer los detalles asociados a cada uno de ellos, y ofreciendo la posibilidad de escucha y de publicación de mensajes en el tópico seleccionado. Específicamente se espera:
+- Diseñar e implementar una interfaz para despliegue de mensajes por tópico. Esta interfaz debe mostrar inicialmente el último mensaje publicado en ese tópico. Dependiendo del tiempo disponible, se espera que los mensajes anteriores al último rescatado puedan recorrerse con ayuda de un slider.
+
+- Diseñar e implementar una interfaz para publicación de mensajes por tópico. Ésta deberá adaptar sus campos dependiendo del tipo de mensaje y deberá validar el tipo de datos que el usuario haya ingresado en cada campo.
+
+- Diseñar e implementar interfaz orientada a móviles, teniendo en cuenta el reducido espacio de pantalla disponible en este tipo de aparatos.
+
+- Implementar un refactoring de la clase de rostopic para permitir el acceso desde el exterior a funciones que consultan información relativa a tópicos, nodos y mensajes.
+
 
 
