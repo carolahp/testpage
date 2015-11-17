@@ -21,7 +21,7 @@ El producto final consistirá en un servicio web visible a nivel de red local, a
 
 ##Diseño de la solución
 
-#Arquitectura del sistema
+###Arquitectura del sistema
 En la figura 1 se expone la arquitectura general del sistema. Según ésta, la información extraída y procesada desde roscore, es expuesta al usuario mediante un servicio web levantado por el microservidor Flask cuya visibilidad será limitada a la red local con el fin de disminuir el riesgo de ataques externos. Tanto ROS como Flask serán ejecutados en el mismo computador servidor. 
 A través de la red local, diversos clientes podrán conectarse al servicio web ofrecido, accediendo así a la información relativa a la instancia de ROS que se ejecuta en la máquina servidor.
 ![Figura 1: Arquitectura general]({{site.baseurl}}/assets/gen-architecture.png)
@@ -29,7 +29,7 @@ A través de la red local, diversos clientes podrán conectarse al servicio web 
 El diseño del sistema comprende la extracción de datos referentes a tópicos, nodos y mensajes desde roscore utilzando funciones provenientes de la clase rostopic de ROS. Estos datos serán utilizados tanto para generar el diagrama estilo rqt_graph de nodos y tópicos, como para implementar los servicios de publicación y escucha de mensajes. Por otro lado, cuando el cliente publique mensajes, éstos serán enviados al servidor en formato JSON y serán comunicados a la instancia de ROS oportunamente. De este modo se implementa un servicio al cliente que es bidireccional en cuanto al envío de mensajes y de información de tópicos y nodos. 
 ![Figura 2: Flujo de datos]({{site.baseurl}}/assets/data-flow.png)
 
-#Detalles de la implementación
+###Detalles de la implementación
 La visualización de tópicos y nodos será creada del siguiente modo:
 - La información sobre los nodos, tópicos y mensajes será obtenida utilizando funciones del módulo rosgraph, propio de ROS. 
 - La información anterior se utilizará para generar un archivo dot usando la librería pydot. 
