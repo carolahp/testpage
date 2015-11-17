@@ -31,7 +31,7 @@ El diseño del sistema comprende la extracción de datos referentes a tópicos, 
 
 ###Detalles de la implementación
 La visualización de tópicos y nodos será creada del siguiente modo:
-- La información sobre los nodos, tópicos y mensajes será obtenida utilizando funciones del módulo rosgraph, propio de ROS. 
+- La información sobre los nodos, tópicos y mensajes será obtenida utilizando funciones del módulo rostopic, propio de ROS. 
 - La información anterior se utilizará para generar un archivo dot usando la librería pydot. 
 - Habiendo obtenido ya el archivo dot, se utilizará pydot nuevamente para generar un archivo svg, en el cual las posiciones correspondientes del diagramas habrán sido determinadas óptimamente gracias a la librería.
 - El archivo svg puede ser visualizado en cualquier broqser web, por lo cual no es necesario más procesamiento para lograr visualizarlo. 
