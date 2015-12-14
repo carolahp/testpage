@@ -38,7 +38,7 @@ A minutos de finalizar la primera semana, mientras recordábamos lo complicado q
 Webtopic es un Servicio web que permite interactuar con ROS desde dispositivos móviles. Sus funcionalidades más importantes se resumen en tres puntos:
 - Visualizar nodos, tópicos y su interacción.
 - Escuchar los mensajes publicados en un tópico.
-- Publicar mensajes en un tópico.
+- Publicar mensajes en un tópico. (funcionalidad pendiente)
 
 ###Qué ventajas ofrece al desarrollador
 Webtopic aborda el problema de la movilidad en ROS, que surge cuando el desarrollador trabaja con robots que se desplazan en el espacio y no puede atender al robot y a ROS a la vez. Al proveer interacción con ROS desde un dispositivo móvil, Webtopic permite al desarrollador desplazarse junto con el robot, sin perder detalle de lo que ocurre a nivel de nodos, tópicos y mensajes. 
@@ -46,19 +46,28 @@ Webtopic es una solución que se adadpta a cualquier escenario, ya que no impone
 
 ###Funcionalidades e interfaces
 
+La vista principal de Webtopic en un dispositivo móvil es la siguiente:
+<a href="{{site.baseurl}}/assets/webtopic-interfaces/portada.png" data-lightbox="portada" data-title="Principal"><img src="{{site.baseurl}}/assets/webtopic-interfaces/portada.png" title="Principal" style="width:50%;height:50%"></a>
+En ésta es claro notar lo siguiente:
+- La url desde la que webtópic es accesible corresponde a la dirección IP del computador que corre ROS y el servidor de Webtopic
+- El elemento central es un gráfico que presenta interacciones entre tópicos y nodos. En éste los rombos representan tópicos, los cuadrados representan nodos, y las flechas representan relación entre nodos y tópicos. Una flecha que parte en un nodo  y finaliza en un tópico indica que tal nodo está publicando en ese tópico. Una flecha en sentido inverso indica que el nodo está escuchando ese tópico.
+- La sección inferior muestra los botones echo y publish. Éstos funcionan sólo cuando un tópico ha sido seleccionado y sirven para escuchar o publicar en un tópico. (la funcionalidad de publish está pendiente)
 
-<a href="{{site.baseurl}}/assets/webtopic-interfaces/portada.png" data-lightbox="portada" data-title="Principal">
-	<img src="{{site.baseurl}}/assets/webtopic-interfaces/portada.png" title="Principal" style="width:50%;height:50%"></a>
+
+La siguiente interfaz muestra un topico seleccionado del gráfico:  
+<a href="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select.png" data-lightbox="topico-select" data-title="Selección de tópico"><img src="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select.png" title="Selección de tópico" style="width:50%;height:50%"></a>
+El gráfico contenido en Webtopic es interactivo en cuanto a que sus componentes son seleccionables. Cuando un tópico es seleccionado tanto éste como todas las flechas que parten o terminan en él son coloreados en tonos rojos. Cuando un nodo es seleccionado su figura se colorea de azul.
+Es importante notar que cuando un elemento del gráfico es seleccionado, detalles al respecto suyo son desplegados en la sección inferior de la pantalla: Se despliega nombre para el caso de los nodos y para el caso de los tópicos se muestra nombre y tipo de mensaje.
 
 
-<a href="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select.png" data-lightbox="topico-select" data-title="Selección de tópico">
-	<img src="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select.png" title="Selección de tópico" style="width:50%;height:50%"></a>
-	
-<a href="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select%20zoom.png" data-lightbox="topico-select-zoom" data-title="Tópico seleccionado y zoom">
-	<img src="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select%20zoom.png" title="Tópico seleccionado y zoom" style="width:50%;height:50%"></a>
-	
+A medida que la cantidad de tópicos y nodos activos crece, también lo hace en tamaño y complejidad el gráfico de Webtopic. Es por eso que se ha incluido la funcionalidad de zoom independiente del resto de la interfaz, lo cual facilita la labor de inspección y selección de los elementos. Esta característica de Webtopic es ilustrada en la siguiente imagen:
+<a href="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select%20zoom.png" data-lightbox="topico-select-zoom" data-title="Tópico seleccionado y zoom"><img src="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select%20zoom.png" title="Tópico seleccionado y zoom" style="width:50%;height:50%"></a>
+
+
+Habiendo seleccionado un tópico, es posible monitorear los mensajes que se están enviando a través suyo. La siguiente pantalla muestra el efecto de presionar el botón "echo" cuando el tópico /turtle1/pose ha sido seleccionado:
 <a href="{{site.baseurl}}/assets/webtopic-interfaces/listening.png" data-lightbox="listening" data-title="Escuchando un tópico">
 	<img src="{{site.baseurl}}/assets/webtopic-interfaces/listening.png" title="Escuchando un tópico" style="width:50%;height:50%"></a>
+En esta imagen se puede ver 
 
 <a href="{{site.baseurl}}/assets/webtopic-interfaces/active%20topics.png" data-lightbox="active-topics" data-title="Tópicos activos">
 	<img src="{{site.baseurl}}/assets/webtopic-interfaces/active%20topics.png" title="Tópicos activos" style="width:50%;height:50%"></a>
