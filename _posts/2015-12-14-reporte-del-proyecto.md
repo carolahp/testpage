@@ -69,7 +69,39 @@ Habiendo ya seleccionado un tópico, es posible monitorear los mensajes que se e
 	<img src="{{site.baseurl}}/assets/webtopic-interfaces/listening.png" title="Escuchando un tópico" style="width:50%;height:50%"></a>
 Tal como se aprecia en la captura, la información requerida se muestra dentro de un panel desplegable ubicado a la derecha de la pantalla. Como en ROS existen tipos de mensajes con estructuras anidadas complejas, la información correspondiente se presenta dentro de un árbol desplegable interactivo. El mensaje desplegado en pantalla corresponde al último publicado en el tópico y la taza a la que se refresca es de 2 Hz. Así es posible ver en tiempo real qué se está publicando por ese tópico.
 
-La última interfaz expone el panel de
+La última interfaz muestra el panel de tópicos activos. En éste se muestran aquellos tópicos que se están escuchando y aquellos sobre los que se está publicando (funcionalidad pendiente). 
 <a href="{{site.baseurl}}/assets/webtopic-interfaces/active%20topics.png" data-lightbox="active-topics" data-title="Tópicos activos">
 	<img src="{{site.baseurl}}/assets/webtopic-interfaces/active%20topics.png" title="Tópicos activos" style="width:50%;height:50%"></a>
+El nombre de cada tópico se muestra al interior de un botón, que al ser activado, despliega el panel de escucha o de publicación correspondiente. Además, junto al nombre de cada tópico se muestra un botón 'X' para cesar la actividad de escucha o publicación correspondiente.
+
+###Diseño y Arquitectura de Webtopic
+El diseño y arquitectura de Webtopic se han mantenido intactos desde la publicación del [reporte de la propuesta definitivo](http://carolahp.github.io/testpage/rqt_graph/topic/node/msg/progress/proyect/2015/11/08/reporte-de-la-propuesta2.html). 
+
+La arquitectura general del sistema está definida por lo expuesto en la siguiente figura.
+<a href="{{site.baseurl}}/assets/gen-architecture.png" data-lightbox="architecture" data-title="Arquitectura">
+	<img src="{{site.baseurl}}/assets/gen-architecture.png" title="Arquitectura" style="width:50%;height:50%"></a>
+Lo más relevante es que notar que en la máquina donde ROS corre, se levanta un microservidor web: Flask, en el que corre el servicio Webtopic, que rescata la información relativa a ROS desde roscore mediante funciones de roslib, algunas de las cuales debieron ser reimplementadas desde cero por la poca extensibilidad de algunas de las librerías de ROS. Un refactoring del código de rostopic.py queda como trabajo propuesto. Los dispositivos móviles se conectarán con Flask a través de la red local.
+
+El flujo de datos es expuesto en la siguiente figura:
+<a href="{{site.baseurl}}/assets/data-flow.png" data-lightbox="data-flow" data-title="Flujo de datos">
+	<img src="{{site.baseurl}}/assets/data-flow.png" title="Flujo de datos" style="width:50%;height:50%"></a>
+Se puede ver que los formatos más relevantes utilizados por Webtopic son JSON y SVG. Los datos provenientes de roscore son utilizados para conformar la imagen SVG generada por Webtopic, y las funcionalidades de echo y publish se valen de JSONs para funcionar. 
+
+###Funcionalidades que no pudieron ser implementadas
+El proyecto Webtopic contempló abarcar tanto la visualización del gráfico de nodos y tópicos, el monitoreo de mensajes mediante escucha y la publicación de mensajes. Esta última funcionalidad no pudo ser implementada por alcances de tiempo, sin embargo, dado el diseño de la solución, implementar esta función no debiese requerir mayor trabajo. Para implementar publish deberá agregarse un endpoint al backend, y un template de interfaz adaptable según el tiempo de mensaje. Este template puede reutilizar la estructura de árbol utilizada para el panel de echo. 
+
+Hubo detalles además que habrían agregado valor, pero que no alcanzaron a ser implementados. Entre ellos se cuenta:
+
+- Permitir al usuario elegir el rate al cual el último mensaje es rescatado y desplegado en la interfaz de escucha. Esta modificación sólo requiere modificar el frontend, agregando un input que determine el valor de la taza de refresco que actualmente se encuentra hardcodeado en 2 Hz. 
+
+- Mostrar la frecuencia a la cual se está publicando sobre el tópico seleccionado, en la interfaz de escucha. Actualmente esta interfaz sólo muestra el último mensaje publicado. Si de pronto cesan todas las publicaciones sobre el tópico, la interfaz de escucha continuará desplegando el último mensaje, lo que puede resultar contraintuitivo para el usuario, que creerá que aún se está publicando sobre ese tópico. 
+
+- Ajustar formato en los campos de la interfaz de ecucha. Actualmente, si los mensajes publicados son muy largos, la interfaz de escucha presenta un overflow. Esta situación puede ser controlada modificando sólamente el frontend.
+
+###Trabajo propuesto
+Además de proponer terminar las funcionalidades no implementadas, algunas funciones que no fueron contempladas al momento de la definición del proyecto, cobraron importancia durante su ejecición. Las siguientes tareas agregarían valor a la solución y quedan propuestas para el usuario interesado:
+- Implementar mecanismos de autentificación que doten a la solución de seguridad, para así permitir su uso desde redes remotas, y no limitar Webtopic a la red local.
+- Rediseñar e implementar una interfaz orientada a dispositivos de escritorio, que aproveche el espacio y los eventos del mouse para sacar más partido a Webtopic si es que se decide utilizarlo desde un dispositivo que no sea móvil.
+
+
 
