@@ -45,18 +45,21 @@ Webtopic aborda el problema de la movilidad en ROS, que surge cuando el desarrol
 Webtopic es una solución que se adadpta a cualquier escenario, ya que no impone requerimientos especiales sobre el dispositivo móvil. Funcionará en cualquier dispositivo móvil que cuente con un explorador web y con conexión WiFi, ya que los procesos de ROS se ejecutarán en un computador convencional que debe estar en red con el dispositivo móvil.
 
 ###Funcionalidades e interfaces
-Webtopic
-<a href="{{site.baseurl}}/assets/webtopic-interfaces/active%20topics.png" data-lightbox="active-topics" data-title="Tópicos activos">
-	<img src="{{site.baseurl}}/assets/webtopic-interfaces/active%20topics.png" title="Tópicos activos"></a>
+
+
+<a href="{{site.baseurl}}/assets/webtopic-interfaces/portada.png" data-lightbox="portada" data-title="Principal">
+	<img src="{{site.baseurl}}/assets/webtopic-interfaces/portada.png" title="Principal" style="width:50%;height:50%"></a>
+
+
+<a href="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select.png" data-lightbox="topico-select" data-title="Selección de tópico">
+	<img src="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select.png" title="Selección de tópico" style="width:50%;height:50%"></a>
 	
-<a href="{{site.baseurl}}/assets/webtopic-interfaces/listening.png" data-lightbox="listening" data-title="Tópicos activos">
-	<img src="{{site.baseurl}}/assets/webtopic-interfaces/listening.png" title="Tópicos activos"></a>
+<a href="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select%20zoom.png" data-lightbox="topico-select-zoom" data-title="Tópico seleccionado y zoom">
+	<img src="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select%20zoom.png" title="Tópico seleccionado y zoom" style="width:50%;height:50%"></a>
+	
+<a href="{{site.baseurl}}/assets/webtopic-interfaces/listening.png" data-lightbox="listening" data-title="Escuchando un tópico">
+	<img src="{{site.baseurl}}/assets/webtopic-interfaces/listening.png" title="Escuchando un tópico" style="width:50%;height:50%"></a>
 
-<a href="{{site.baseurl}}/assets/webtopic-interfaces/portada.png" data-lightbox="portada" data-title="Tópicos activos">
-	<img src="{{site.baseurl}}/assets/webtopic-interfaces/portada.png" title="Tópicos activos"></a>
+<a href="{{site.baseurl}}/assets/webtopic-interfaces/active%20topics.png" data-lightbox="active-topics" data-title="Tópicos activos">
+	<img src="{{site.baseurl}}/assets/webtopic-interfaces/active%20topics.png" title="Tópicos activos" style="width:50%;height:50%"></a>
 
-<a href="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select%20zoom.png" data-lightbox="topico-select-zoom" data-title="Tópicos activos">
-	<img src="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select%20zoom.png" title="Tópicos activos"></a>
-
-<a href="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select.png" data-lightbox="topico-select" data-title="Tópicos activos">
-	<img src="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select.png" title="Tópicos activos"></a>
