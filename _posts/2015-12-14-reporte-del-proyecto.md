@@ -79,12 +79,12 @@ El diseño y arquitectura de Webtopic se han mantenido intactos desde la publica
 
 La arquitectura general del sistema está definida por lo expuesto en la siguiente figura.
 <a href="{{site.baseurl}}/assets/gen-architecture.png" data-lightbox="architecture" data-title="Arquitectura">
-	<img src="{{site.baseurl}}/assets/gen-architecture.png" title="Arquitectura" style="width:50%;height:50%"></a>
+	<img src="{{site.baseurl}}/assets/gen-architecture.png" title="Arquitectura"></a>
 Lo más relevante es que notar que en la máquina donde ROS corre, se levanta un microservidor web: Flask, en el que corre el servicio Webtopic, que rescata la información relativa a ROS desde roscore mediante funciones de roslib, algunas de las cuales debieron ser reimplementadas desde cero por la poca extensibilidad de algunas de las librerías de ROS. Un refactoring del código de rostopic.py queda como trabajo propuesto. Los dispositivos móviles se conectarán con Flask a través de la red local.
 
 El flujo de datos es expuesto en la siguiente figura:
 <a href="{{site.baseurl}}/assets/data-flow.png" data-lightbox="data-flow" data-title="Flujo de datos">
-	<img src="{{site.baseurl}}/assets/data-flow.png" title="Flujo de datos" style="width:50%;height:50%"></a>
+	<img src="{{site.baseurl}}/assets/data-flow.png" title="Flujo de datos"></a>
 Se puede ver que los formatos más relevantes utilizados por Webtopic son JSON y SVG. Los datos provenientes de roscore son utilizados para conformar la imagen SVG generada por Webtopic, y las funcionalidades de echo y publish se valen de JSONs para funcionar. 
 
 ###Funcionalidades que no pudieron ser implementadas
@@ -100,7 +100,9 @@ Hubo detalles además que habrían agregado valor, pero que no alcanzaron a ser 
 
 ###Trabajo propuesto
 Además de proponer terminar las funcionalidades no implementadas, algunas funciones que no fueron contempladas al momento de la definición del proyecto, cobraron importancia durante su ejecición. Las siguientes tareas agregarían valor a la solución y quedan propuestas para el usuario interesado:
+
 - Implementar mecanismos de autentificación que doten a la solución de seguridad, para así permitir su uso desde redes remotas, y no limitar Webtopic a la red local.
+
 - Rediseñar e implementar una interfaz orientada a dispositivos de escritorio, que aproveche el espacio y los eventos del mouse para sacar más partido a Webtopic si es que se decide utilizarlo desde un dispositivo que no sea móvil.
 
 
