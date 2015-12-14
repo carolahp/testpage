@@ -49,26 +49,27 @@ Webtopic es una solución que se adadpta a cualquier escenario, ya que no impone
 La vista principal de Webtopic en un dispositivo móvil es la siguiente:
 <a href="{{site.baseurl}}/assets/webtopic-interfaces/portada.png" data-lightbox="portada" data-title="Principal"><img src="{{site.baseurl}}/assets/webtopic-interfaces/portada.png" title="Principal" style="width:50%;height:50%"></a>
 En ésta es claro notar lo siguiente:
-- La url desde la que webtópic es accesible corresponde a la dirección IP del computador que corre ROS y el servidor de Webtopic
+- La url desde la que Webtopic es accesible corresponde a la dirección IP del computador que corre ROS y el servidor de Webtopic
 - El elemento central es un gráfico que presenta interacciones entre tópicos y nodos. En éste los rombos representan tópicos, los cuadrados representan nodos, y las flechas representan relación entre nodos y tópicos. Una flecha que parte en un nodo  y finaliza en un tópico indica que tal nodo está publicando en ese tópico. Una flecha en sentido inverso indica que el nodo está escuchando ese tópico.
-- La sección inferior muestra los botones echo y publish. Éstos funcionan sólo cuando un tópico ha sido seleccionado y sirven para escuchar o publicar en un tópico. (la funcionalidad de publish está pendiente)
+- La sección inferior muestra los botones echo y publish. Éstos funcionan sólo cuando un tópico ha sido seleccionado y sirven para escuchar o publicar en éste. (la funcionalidad de publish está pendiente). El botón presente en la sección superior sirve para ver un listado de aquellos tópicos que se están escuchando o sobre los que se está publicando actualmente.
 
 
-La siguiente interfaz muestra un topico seleccionado del gráfico:  
+La siguiente interfaz muestra cómo luce un tópico que ha sido seleccionado en el gráfico:  
 <a href="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select.png" data-lightbox="topico-select" data-title="Selección de tópico"><img src="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select.png" title="Selección de tópico" style="width:50%;height:50%"></a>
-El gráfico contenido en Webtopic es interactivo en cuanto a que sus componentes son seleccionables. Cuando un tópico es seleccionado tanto éste como todas las flechas que parten o terminan en él son coloreados en tonos rojos. Cuando un nodo es seleccionado su figura se colorea de azul.
+El gráfico contenido en Webtopic es interactivo en cuanto a que sus componentes son seleccionables mediante un toque (touch-event). Cuando un tópico es seleccionado tanto éste como todas las flechas que parten o terminan en él son coloreados en tonos rojos. Cuando un nodo es seleccionado éste se colorea de azul.
 Es importante notar que cuando un elemento del gráfico es seleccionado, detalles al respecto suyo son desplegados en la sección inferior de la pantalla: Se despliega nombre para el caso de los nodos y para el caso de los tópicos se muestra nombre y tipo de mensaje.
 
 
-A medida que la cantidad de tópicos y nodos activos crece, también lo hace en tamaño y complejidad el gráfico de Webtopic. Es por eso que se ha incluido la funcionalidad de zoom independiente del resto de la interfaz, lo cual facilita la labor de inspección y selección de los elementos. Esta característica de Webtopic es ilustrada en la siguiente imagen:
+A medida que la cantidad de tópicos y nodos activos crece, también lo hace en tamaño y complejidad el gráfico generado por Webtopic. Es por eso que se ha incluido la funcionalidad de zoom independiente del resto de la interfaz, lo cual facilita la labor de inspección y selección de los elementos. Esta característica de Webtopic es ilustrada en la siguiente imagen:
 <a href="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select%20zoom.png" data-lightbox="topico-select-zoom" data-title="Tópico seleccionado y zoom"><img src="{{site.baseurl}}/assets/webtopic-interfaces/topico%20select%20zoom.png" title="Tópico seleccionado y zoom" style="width:50%;height:50%"></a>
+El efecto zoom puede gatillarse de dos modos: mediante eventos de 'pich' o bien utilizando los botones '+', 'RESET' y '-' incorporados en la interfaz.
 
-
-Habiendo seleccionado un tópico, es posible monitorear los mensajes que se están enviando a través suyo. La siguiente pantalla muestra el efecto de presionar el botón "echo" cuando el tópico /turtle1/pose ha sido seleccionado:
+Habiendo ya seleccionado un tópico, es posible monitorear los mensajes que se están enviando a través suyo. La siguiente pantalla muestra el efecto de presionar el botón "echo" cuando el tópico /turtle1/pose ha sido seleccionado:
 <a href="{{site.baseurl}}/assets/webtopic-interfaces/listening.png" data-lightbox="listening" data-title="Escuchando un tópico">
 	<img src="{{site.baseurl}}/assets/webtopic-interfaces/listening.png" title="Escuchando un tópico" style="width:50%;height:50%"></a>
-En esta imagen se puede ver 
+Tal como se aprecia en la captura, la información requerida se muestra dentro de un panel desplegable ubicado a la derecha de la pantalla. Como en ROS existen tipos de mensajes con estructuras anidadas complejas, la información correspondiente se presenta dentro de un árbol desplegable interactivo. El mensaje desplegado en pantalla corresponde al último publicado en el tópico y la taza a la que se refresca es de 2 Hz. Así es posible ver en tiempo real qué se está publicando por ese tópico.
 
+La última interfaz expone el panel de
 <a href="{{site.baseurl}}/assets/webtopic-interfaces/active%20topics.png" data-lightbox="active-topics" data-title="Tópicos activos">
 	<img src="{{site.baseurl}}/assets/webtopic-interfaces/active%20topics.png" title="Tópicos activos" style="width:50%;height:50%"></a>
 
