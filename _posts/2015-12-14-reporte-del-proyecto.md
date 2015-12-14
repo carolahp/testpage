@@ -13,7 +13,8 @@ Tras interiorizarnos con el [turtlebot] (http://www.turtlebot.com) en la primera
 
 Algunas de las cosas que llamaron nuestra atención y nuestras ideas para atacarlas se discuten en el reporte, para finalizar con nuestro proyecto final y aporte a la comunidad de desarrollo de ROS.
 
-##Concepción del proyecto.
+##Concepción del proyecto
+
 ###¿Por qué los tópicos de ROS?
 Los tópicos de ROS son buses, o canales, de información que conectan los distintos nodos permitiéndoles intercambiar información.
 
