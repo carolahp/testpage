@@ -45,4 +45,5 @@ Webtopic es una solución que se adadpta a cualquier escenario, ya que no impone
 
 ###Funcionalidades e interfaces
 Webtopic
-
+<a href="{{site.baseurl}}/assets/webtopic-interfaces/active%20topics.png" data-lightbox="architecture-large" data-title="Tópicos activos">
+	<img src="{{site.baseurl}}/assets/reporte/webtopic-interfaces/active%20topics.png" title="Tópicos activos"></a>
