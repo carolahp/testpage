@@ -26,10 +26,7 @@ Sin embargo ROS incluye heramientas gráficas que para ciertos casos de uso cubr
 
 Luego de esto, y siguiendo con nuestra fijación en los tópicos empezamos a imaginar nuevas visualizaciones y formas de hacer más atractivo y útil el proceso de debuggear lo que sucede en los tópicos. Sin embargo algunas ya existían, [rqt_plot] (http://wiki.ros.org/rqt_plot) por ejemplo, y el resto no lograron convencer al profesor e incluso ni a nosotros mismos, en gran parte por su poco valor agregado.
 
-Así la primera semana de trabajo en el proyecto se nos pasó buscándolo.
+Así fue como la primera semana de trabajo en el proyecto se nos pasaba buscándolo.
 
 ###La epifanía
-
-
-### WebTopic
-WebTopic es una interfaz web y una API HTTP para interactuar con los tópicos de ROS, pensada para ser utilizada desde dispositivos móviles.
+A minutos de finalizar la primera semana, mientras recordábamos lo complicado que fue hacer pruebas con el robot. Pues mientras uno tenía que seguirlo cuidando que no se golpeara o golpeara a alguien o algo más el otro debía permanecer en el computador viendo que sucedía, fue que pensamos en atacar ese problema. En ese momento fue que WebTopic comenzó a tomar forma.
