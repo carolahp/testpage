@@ -32,12 +32,17 @@ Así fue como la primera semana de trabajo en el proyecto se nos pasaba definié
 ###La epifanía
 A minutos de finalizar la primera semana, mientras recordábamos lo complicado que fue hacer pruebas con el robot, pues mientras uno tenía que seguirlo cuidando que no se golpeara o golpeara a alguien o algo más, el otro debía permanecer en el computador viendo que sucedía en ROS, fue que identificamos esta situación como un problema y decidimos atacarlo. En ese momento WebTopic comenzó a tomar forma.
 
-##Webtopic
+##Descripción de Webtopic
 ###Definición
 Webtopic es un Servicio web que permite interactuar con ROS desde dispositivos móviles. Sus funcionalidades más importantes se resumen en tres puntos:
 * Visualizar nodos, tópicos y su interacción.
 * Escuchar los mensajes publicados en un tópico.
 * Publicar mensajes en un tópico.
-* 
 
+###Qué ventajas ofrece al desarrollador
+Webtopic aborda el problema de la movilidad en ROS, que surge cuando el desarrollador trabaja con robots que se desplazan en el espacio y no puede atender al robot y a ROS a la vez. Al proveer interacción con ROS desde un dispositivo móvil, Webtopic permite al desarrollador desplazarse junto con el robot, sin perder detalle de lo que ocurre a nivel de nodos, tópicos y mensajes. 
+Webtopic es una solución que se adadpta a cualquier escenario, ya que no impone requerimientos especiales sobre el dispositivo móvil. Funcionará en cualquier dispositivo móvil que cuente con un explorador web y con conexión WiFi, ya que los procesos de ROS se ejecutarán en un computador convencional que debe estar en red con el dispositivo móvil.
+
+###Funcionalidades e interfaces
+Webtopic
 
