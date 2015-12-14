@@ -9,7 +9,7 @@ categories: rostopic GUI final webtopic project
 ##Introducción
 Este reporte busca retratar el proceso que finalmente llevó al desarrollo de lo que llamamos [Webtopic](https://github.com/carolahp/rostopic-gui).
 
-Tras interiorizarnos con el [turtlebot] (www.turtlebot.com) en la primera mitad del semestre, en la cual realizamos varias pruebas y pequeñas rutinas con él, como por ejemplo un [baile] (http://carolahp.github.io/testpage/turtlebot/baile/python/script/2015/10/01/el-baile-de-la-tortuga.html). Fuimos notando ciertas cosas en [ROS] (www.ros.org) y en sus herramientas de desarrollo que podían hacerse mejor y hacer el proceso más ameno para los desarrolladores.
+Tras interiorizarnos con el [turtlebot] (http://www.turtlebot.com) en la primera mitad del semestre, en la cual realizamos varias pruebas y pequeñas rutinas con él, como por ejemplo un [baile] (http://carolahp.github.io/testpage/turtlebot/baile/python/script/2015/10/01/el-baile-de-la-tortuga.html). Fuimos notando ciertas cosas en [ROS] (http://www.ros.org) y en sus herramientas de desarrollo que podían hacerse mejor y hacer el proceso más ameno para los desarrolladores.
 
 Algunas de las cosas que llamaron nuestra atención y nuestras ideas para atacarlas se discuten en el reporte, para finalizar con nuestro proyecto final y aporte a la comunidad de desarrollo de ROS.
 
